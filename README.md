@@ -92,19 +92,3 @@ The UI uses a curated palette of **Zinc & Modern Accents**, glassmorphism effect
     php artisan serve
     npm run dev
     ```
-
----
-
-## 📸 Screenshots
-
-|                     Dashboard                     |             Fleet Management              |                 Mobile View                 |
-| :-----------------------------------------------: | :---------------------------------------: | :-----------------------------------------: |
-| ![Dashboard](public/images/dashboard-preview.png) | ![Fleet](public/images/fleet-preview.png) | ![Mobile](public/images/mobile-preview.png) |
-
-_(Note: Replace with actual screenshots in your deployment)_
-
----
-
-<p align="center">
-  Made with ❤️ for the Bromo Adventure Community
-</p>
