@@ -68,15 +68,14 @@
                     <!-- Bank Accounts -->
                     <div class="grid grid-cols-2 gap-3">
                         <div class="p-4 bg-white border border-zinc-200 rounded-sm">
-                            <p class="text-[9px] font-black text-blue-600 uppercase tracking-widest mb-2">Transfer BCA</p>
-                            <p class="text-base font-mono font-bold text-zinc-900 tracking-wider">123 456 7890</p>
+                            <p class="text-[9px] font-black text-blue-600 uppercase tracking-widest mb-2">Transfer BRI</p>
+                            <p class="text-base font-mono font-bold text-zinc-900 tracking-wider">0880 0100 6448 501</p>
                             <p class="text-[9px] text-zinc-400 mt-0.5 uppercase">a.n. Bromo Trail Rental</p>
                         </div>
                         <div class="p-4 bg-white border border-zinc-200 rounded-sm">
-                            <p class="text-[9px] font-black text-yellow-600 uppercase tracking-widest mb-2">Transfer Mandiri
-                            </p>
-                            <p class="text-base font-mono font-bold text-zinc-900 tracking-wider">098 765 4321</p>
-                            <p class="text-[9px] text-zinc-400 mt-0.5 uppercase">a.n. Bromo Trail Rental</p>
+                            <p class="text-[9px] font-black text-orange-600 uppercase tracking-widest mb-2">E-Wallet</p>
+                            <p class="text-base font-mono font-bold text-zinc-900 tracking-wider">0880 0100 6448 501</p>
+                            <p class="text-[9px] text-zinc-400 mt-0.5 uppercase">Dana / Gopay / ShopeePay</p>
                         </div>
                     </div>
                 </div>
@@ -104,9 +103,8 @@
                                         Pembayaran</label>
                                     <select name="metode_bayar" id="metode_bayar" required
                                         class="w-full border-2 border-zinc-100 bg-zinc-50 rounded-sm p-4 focus:outline-none focus:border-zinc-900 transition-all font-bold text-zinc-900">
-                                        <option value="Transfer BCA">Bank BCA (Otomatis)</option>
-                                        <option value="Transfer Mandiri">Bank Mandiri (Otomatis)</option>
-                                        <option value="E-Wallet (OVO/GoPay)">OVO / GoPay / Dana</option>
+                                        <option value="Transfer BRI">Bank BRI (Otomatis)</option>
+                                        <option value="E-Wallet (Dana/Gopay/ShopeePay)">Dana / GoPay / ShopeePay</option>
                                     </select>
                                 </div>
 

@@ -47,4 +47,9 @@ class Penyewaan extends Model
     {
         return $this->hasMany(Pembayaran::class, 'id_penyewaan');
     }
+
+    public function cekKondisi()
+    {
+        return $this->hasMany(CekKondisi::class, 'id_penyewaan');
+    }
 }

@@ -69,7 +69,7 @@
                                 </td>
                                 <td class="py-4 px-4 text-center">
                                     @if ($check->foto_kondisi)
-                                        <a href="{{ $check->foto_kondisi }}" target="_blank"
+                                        <a href="{{ asset($check->foto_kondisi) }}" target="_blank"
                                             class="text-blue-600 hover:text-blue-800">
                                             <i class="fa-solid fa-image"></i> Lihat
                                         </a>

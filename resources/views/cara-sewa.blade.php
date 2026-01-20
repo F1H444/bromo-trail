@@ -209,8 +209,9 @@
                         <div class="space-y-4">
                             <div class="bg-white p-6 rounded-xl border border-zinc-200 shadow-sm">
                                 <h4 class="font-bold text-zinc-900 mb-2 text-sm">Apa saja metode pembayarannya?</h4>
-                                <p class="text-xs text-zinc-600 leading-relaxed">Kami menerima transfer via Bank BCA, Bank
-                                    Mandiri, dan beberapa E-Wallet populer. Detail nomor rekening akan tampil setelah Anda
+                                <p class="text-xs text-zinc-600 leading-relaxed">Kami menerima transfer via Bank BRI dan
+                                    beberapa E-Wallet populer seperti Dana, Gopay, dan ShopeePay. Detail nomor rekening akan
+                                    tampil setelah Anda
                                     membuat pesanan.</p>
                             </div>
                             <div class="bg-white p-6 rounded-xl border border-zinc-200 shadow-sm">

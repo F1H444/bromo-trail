@@ -71,12 +71,12 @@
                                 </td>
                                 <td class="py-4 px-4 text-right">
                                     <div class="flex justify-end gap-2">
-                                        <a href="{{ route('motor.edit', $motor->id) }}"
+                                        <a href="{{ route('motor.edit', $motor) }}"
                                             class="w-8 h-8 flex items-center justify-center bg-blue-50 text-blue-600 rounded hover:bg-blue-100 transition">
                                             <i class="fa-solid fa-pen-to-square"></i>
                                         </a>
                                         <button
-                                            onclick="openDeleteModal('{{ route('motor.destroy', $motor->id) }}', '{{ $motor->merk_tipe }}')"
+                                            onclick="openDeleteModal('{{ route('motor.destroy', $motor) }}', '{{ $motor->merk_tipe }}')"
                                             class="w-8 h-8 flex items-center justify-center bg-red-50 text-red-600 rounded hover:bg-red-100 transition">
                                             <i class="fa-solid fa-trash"></i>
                                         </button>
@@ -127,12 +127,12 @@
                         </div>
                     </div>
                     <div class="flex gap-2 mt-4 pt-4 border-t border-zinc-100">
-                        <a href="{{ route('motor.edit', $motor->id) }}"
+                        <a href="{{ route('motor.edit', $motor) }}"
                             class="flex-1 py-2 bg-blue-50 text-blue-600 rounded text-sm font-bold text-center hover:bg-blue-100 transition">
                             <i class="fa-solid fa-pen-to-square mr-1"></i> Edit
                         </a>
                         <button
-                            onclick="openDeleteModal('{{ route('motor.destroy', $motor->id) }}', '{{ $motor->merk_tipe }}')"
+                            onclick="openDeleteModal('{{ route('motor.destroy', $motor) }}', '{{ $motor->merk_tipe }}')"
                             class="flex-1 py-2 bg-red-50 text-red-600 rounded text-sm font-bold hover:bg-red-100 transition">
                             <i class="fa-solid fa-trash mr-1"></i> Hapus
                         </button>

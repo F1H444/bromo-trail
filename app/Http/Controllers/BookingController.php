@@ -27,10 +27,6 @@ class BookingController extends Controller
             'id_motor' => 'required|exists:motor,id',
             'tgl_mulai' => 'required|date|after_or_equal:today',
             'tgl_kembali' => 'required|date|after:tgl_mulai',
-            'nama_lengkap' => 'required|string|max:255',
-            'no_wa' => ['required', 'string', 'max:20', 'regex:/^08[0-9]{8,13}$/'],
-            'no_ktp_sim' => 'required|string|max:50',
-            'alamat_asal' => 'nullable|string',
             'items' => 'array',
             'items.*.id' => 'exists:tambahan,id',
             'items.*.jumlah' => 'integer|min:0',
@@ -80,14 +76,6 @@ class BookingController extends Controller
 
             // 2. Use Authenticated Pelanggan
             $pelanggan = Auth::guard('pelanggan')->user();
-
-            // Optionally update their data if they changed it in the form
-            $pelanggan->update([
-                'nama_lengkap' => $request->nama_lengkap,
-                'no_wa' => $request->no_wa,
-                'no_ktp_sim' => $request->no_ktp_sim,
-                'alamat_asal' => $request->alamat_asal,
-            ]);
 
             // 3. Calculate Motor Cost
             $motor = Motor::find($request->id_motor);

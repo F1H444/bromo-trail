@@ -51,6 +51,7 @@ Route::post('/reset-password', [PasswordResetController::class, 'reset'])->name(
 Route::middleware(['auth:pelanggan'])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::get('/dashboard/bookings', [DashboardController::class, 'bookings'])->name('dashboard.bookings');
+    Route::get('/dashboard/bookings/{id}', [DashboardController::class, 'showBooking'])->name('dashboard.bookings.show');
     Route::get('/profile', [DashboardController::class, 'profile'])->name('profile');
     Route::post('/profile', [DashboardController::class, 'updateProfile']);
 

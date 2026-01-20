@@ -7,12 +7,12 @@
         <p class="text-xs font-bold text-zinc-500 uppercase tracking-widest mb-4">Transfer ke Rekening:</p>
         <div class="space-y-3">
             <div>
-                <p class="text-sm text-zinc-500">Bank</p>
-                <p class="font-bold text-zinc-900">BCA</p>
+                <p class="text-sm text-zinc-500">Bank / E-Wallet</p>
+                <p class="font-bold text-zinc-900">BRI / Dana / Gopay / ShopeePay</p>
             </div>
             <div>
-                <p class="text-sm text-zinc-500">Nomor Rekening</p>
-                <p class="font-bold text-zinc-900 text-lg">1234567890</p>
+                <p class="text-sm text-zinc-500">Nomor Rekening / HP</p>
+                <p class="font-bold text-zinc-900 text-lg">088001006448501</p>
             </div>
             <div>
                 <p class="text-sm text-zinc-500">Atas Nama</p>
@@ -33,9 +33,9 @@
             <select name="metode_bayar" id="metode_bayar" required
                 class="w-full border border-zinc-300 rounded-sm p-3 focus:outline-none focus:border-zinc-900 transition-colors">
                 <option value="">Pilih Metode</option>
-                <option value="Transfer Bank">Transfer Bank</option>
-                <option value="E-Wallet">E-Wallet</option>
-                <option value="Cash">Cash</option>
+                <option value="Transfer BRI">Transfer BRI</option>
+                <option value="E-Wallet (Dana/Gopay/ShopeePay)">E-Wallet (Dana/Gopay/ShopeePay)</option>
+                <option value="Cash">Cash / On the Spot</option>
             </select>
         </div>
 

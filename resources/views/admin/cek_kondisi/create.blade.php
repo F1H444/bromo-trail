@@ -14,7 +14,7 @@
             </div>
 
             <div class="bg-white border border-zinc-200 rounded-sm shadow-sm p-8">
-                <form action="{{ route('cek-kondisi.store') }}" method="POST">
+                <form action="{{ route('cek-kondisi.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
 
                     <div class="mb-6">
@@ -66,12 +66,12 @@
                     </div>
 
                     <div class="mb-8">
-                        <label for="foto_bukti_url"
-                            class="block text-xs font-bold text-zinc-500 uppercase tracking-widest mb-2">URL Foto Kondisi
+                        <label for="foto_bukti"
+                            class="block text-xs font-bold text-zinc-500 uppercase tracking-widest mb-2">Foto Kondisi
                             (Opsional)</label>
-                        <input type="url" name="foto_bukti_url" id="foto_bukti_url"
-                            class="w-full bg-zinc-50 border border-zinc-200 p-3 rounded-sm focus:outline-none focus:border-zinc-900 transition"
-                            placeholder="https://...">
+                        <input type="file" name="foto_bukti" id="foto_bukti" accept="image/*"
+                            class="w-full bg-zinc-50 border border-zinc-200 p-3 rounded-sm focus:outline-none focus:border-zinc-900 transition">
+                        <p class="text-xs text-zinc-400 mt-1">Format: JPG, PNG, GIF. Maks: 10MB.</p>
                     </div>
 
                     <button type="submit"

@@ -30,4 +30,14 @@ class Motor extends Model
         'is_popular' => 'boolean',
         'harga_sewa_per_hari' => 'decimal:2',
     ];
+
+    /**
+     * Get the route key for the model.
+     *
+     * @return string
+     */
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
 }

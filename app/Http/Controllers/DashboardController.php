@@ -35,6 +35,17 @@ class DashboardController extends Controller
         return view('dashboard.bookings', compact('bookings'));
     }
 
+    public function showBooking($id)
+    {
+        $pelanggan = Auth::guard('pelanggan')->user();
+
+        $booking = Penyewaan::with(['motor', 'pembayaran', 'details.tambahan', 'cekKondisi'])
+            ->where('id_pelanggan', $pelanggan->id)
+            ->findOrFail($id);
+
+        return view('dashboard.bookings-show', compact('booking'));
+    }
+
     public function profile()
     {
         $pelanggan = Auth::guard('pelanggan')->user();
